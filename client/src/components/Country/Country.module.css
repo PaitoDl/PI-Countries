@@ -1,0 +1,53 @@
+.countryCard{
+     height: auto;
+     background-color: rgb(223, 223, 223);
+     border-radius: 10px;
+     padding: 30px 10px;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+     color: black;
+}
+
+.countryInfo{
+     /* display: flex;
+     flex-direction: column;
+     align-items: center; */
+     text-align: center;
+     line-height: 1;
+     
+}
+
+.countryImg img{
+     /* max-height: px; */
+     max-width: 200px;
+     height: 140px;
+     border-radius: 10px;
+}
+
+.countryInfo span{
+     font-weight: 700;
+}
+
+.button{
+     display: inline-block;
+     margin-top: 10px;
+     padding: 10px 0;
+     background-color: #026773;
+     text-align: center;
+     color: white;
+     width: 240px;
+     height: auto;
+     font-size: 20px;
+     font-weight: 700;
+     border-radius: 8px;
+     border: none;
+     
+}
+
+.button:hover{
+     background-color: #3CA6A6;
+     color: white;
+}

@@ -1,0 +1,26 @@
+html{
+  box-sizing: border-box;
+  color: black;
+}
+
+*,*:before,*:after{box-sizing: inherit;}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+  background-color: black;
+  background-image: url(./img/fondo.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
