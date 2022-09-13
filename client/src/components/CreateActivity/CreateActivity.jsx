@@ -121,10 +121,10 @@ export default function CreateActivity() {
                     <label>Temporada</label>
                     <select name="season" onChange={handlerOnChange} value={activity.season}>
                          <option value="">Elige una temporada</option>
-                         <option value="Winter">Invierno</option>
-                         <option value="Spring">Primavera</option>
-                         <option value="Summer">Verano</option>
-                         <option value="Autumn">Otono</option>
+                         <option value="Invierno">Invierno</option>
+                         <option value="Primavera">Primavera</option>
+                         <option value="Verano">Verano</option>
+                         <option value="Otono">Otono</option>
                     </select>
                     {/* </div> */}
 
