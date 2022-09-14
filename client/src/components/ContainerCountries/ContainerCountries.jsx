@@ -75,11 +75,13 @@ export default function ContainerCountries() {
       </div>
 
       {/* Div que contiene todos los countries */}
-      <div className={`${s.containerCards}`}>
+    {/* Div que contiene todos los countries */}
+    <div className={`${s.containerCards}`}>
         {countries.length > 0 ? countries.map((country, index) =>{
-        // Se crea un CardCountry por cada country en el state. Si es la pagina 1, solo muestra 12 countries
-        if(actualPage === 1 & index <12){
-          return (<CardCountry 
+        // Se crea un CardCountry por cada country en el state, muestra 12 countries por pagina.
+        if (index >= ((actualPage-1)*12) && (index < (actualPage*12))){
+          return (
+          <CardCountry 
             key={country.id} 
             id = {country.id}
             flag={country.flag}
@@ -88,18 +90,7 @@ export default function ContainerCountries() {
             continent={country.continent}  
             population={country.population}      
           />)
-        }
-        else if(actualPage !== 1 && index >= ((actualPage-1)*12)-1 && (index < (actualPage*12)-1)){
-          // Se crea un CardCountry por cada country en el state. Si no es la pagina 1, muestra 12 countries
-          return (<CardCountry 
-            key={country.id} 
-            id = {country.id}
-            flag={country.flag}
-            code={country.code}
-            name={country.nameSpanish}
-            continent={country.continent}  
-            population={country.population}      
-          />)}}): 
+        }}): 
           <div className={s.noHay}>
             <p>No hay paises. Intenta otra busqueda.</p>
           </div>}
