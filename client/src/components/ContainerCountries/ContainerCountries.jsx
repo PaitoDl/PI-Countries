@@ -77,7 +77,7 @@ export default function ContainerCountries() {
       {/* Div que contiene todos los countries */}
       <div className={`${s.containerCards}`}>
         {countries.length > 0 ? countries.map((country, index) =>{
-        // Se crea un CardCountry por cada country en el state. Si es la pagina 1, solo muestra 9 countries
+        // Se crea un CardCountry por cada country en el state. Si es la pagina 1, solo muestra 12 countries
         if(actualPage === 1 & index <12){
           return (<CardCountry 
             key={country.id} 

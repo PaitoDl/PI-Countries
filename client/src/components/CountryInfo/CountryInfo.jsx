@@ -21,7 +21,7 @@ export default function CountryInfo(){
                     <img src={`${country.flag}`} className={`${s.img}`} alt="Imagen de la bandera"/>
                </div>
                <div className={`${s.info}`}>
-                    <p>Nombre: <span>{country.name}</span></p>
+                    <p>Nombre: <span>{country.nameSpanish}</span></p>
                     <p>Codigo: <span>{country.code}</span></p>
                     <p>Capital: <span>{country.capital}</span></p>
                     <p>Poblacion: <span>{country.population}</span></p>
