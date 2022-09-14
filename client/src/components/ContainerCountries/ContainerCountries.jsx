@@ -39,7 +39,7 @@ export default function ContainerCountries() {
   // funcion que despacha el cambio de continente
   const cambiarContinente = (e) =>{
     dispatch(setContinent(e.target.value));
-    console.log('entro?');
+    
   }  
 
   return (
@@ -78,7 +78,7 @@ export default function ContainerCountries() {
       <div className={`${s.containerCards}`}>
         {countries.length > 0 ? countries.map((country, index) =>{
         // Se crea un CardCountry por cada country en el state. Si es la pagina 1, solo muestra 9 countries
-        if(actualPage === 1 & index <9){
+        if(actualPage === 1 & index <12){
           return (<CardCountry 
             key={country.id} 
             id = {country.id}
@@ -89,8 +89,8 @@ export default function ContainerCountries() {
             population={country.population}      
           />)
         }
-        else if(actualPage !== 1 && index >= ((actualPage-1)*10)-1 && (index < (actualPage*10)-1)){
-          // Se crea un CardCountry por cada country en el state. Si no es la pagina 1, muestra 10 countries
+        else if(actualPage !== 1 && index >= ((actualPage-1)*12)-1 && (index < (actualPage*12)-1)){
+          // Se crea un CardCountry por cada country en el state. Si no es la pagina 1, muestra 12 countries
           return (<CardCountry 
             key={country.id} 
             id = {country.id}

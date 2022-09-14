@@ -39,8 +39,8 @@ const createDB = async () => {
           flag: svg ? svg : "No tiene bandera",
           code: cca3,
           continent: continents[0],
-          capital: capital ? capital[0] : "Dont have capital",
-          subregion: subregion ? subregion : "Dont have subregion",
+          capital: capital ? capital[0] : "No tiene capital",
+          subregion: subregion ? subregion : "No tiene una sub region",
           area: area ? area : 0,
           population: parseInt(population),
         }

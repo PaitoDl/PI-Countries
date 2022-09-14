@@ -9,7 +9,7 @@ export default function Paginator({countriesLength}){
      const dispatch = useDispatch();
      const paginas = [];
      
-     for(let i = 1; i<=Math.ceil((countriesLength+1)/10);i++){
+     for(let i = 1; i<=Math.ceil((countriesLength+1)/12);i++){
                     paginas.push(i);
      }   
 
